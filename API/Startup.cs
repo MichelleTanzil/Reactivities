@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Persistence;
+using Microsoft.EntityFrameworkCore;
 
 namespace API
 {
@@ -29,14 +31,16 @@ namespace API
       {
         opt.UseSqlite(Configuration.GetConnectionString("DefaultConnection"));
       });
-      services.AddCors(opt => {
-        opt.AddPolicy("CorsPolicy", policy =>
-        {
-          policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:3000");
-        });
-      });
+      services.AddCors(opt =>
+                {
+                  opt.AddPolicy("CorsPolicy", policy =>
+              {
+                policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:3000");
+              });
+                });
       services.AddControllers();
     }
+
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -45,18 +49,12 @@ namespace API
       {
         app.UseDeveloperExceptionPage();
       }
+
       // Comment this out for now
       // app.UseHttpsRedirection();
       // Remove https://localhost:5001 for now from launchSettings.json
-      app.UseCors("CorsPolicy");
-      app.UseEndpoints(endpoints => {
-        endpoints.MapControllers();
-      });
-      app.UseMVC();
       app.UseRouting();
-
-      app.UseAuthorization();
-
+      app.UseCors("CorsPolicy");
       app.UseEndpoints(endpoints =>
       {
         endpoints.MapControllers();
