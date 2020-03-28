@@ -29,6 +29,12 @@ namespace API
       {
         opt.UseSqlite(Configuration.GetConnectionString("DefaultConnection"));
       });
+      services.AddCors(opt => {
+        opt.AddPolicy("CorsPolicy", policy =>
+        {
+          policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:3000");
+        });
+      });
       services.AddControllers();
     }
 
@@ -42,6 +48,11 @@ namespace API
       // Comment this out for now
       // app.UseHttpsRedirection();
       // Remove https://localhost:5001 for now from launchSettings.json
+      app.UseCors("CorsPolicy");
+      app.UseEndpoints(endpoints => {
+        endpoints.MapControllers();
+      });
+      app.UseMVC();
       app.UseRouting();
 
       app.UseAuthorization();
