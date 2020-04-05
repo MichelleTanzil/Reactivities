@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Mxx4WhGqXFEcH4JdDNJw9t0YmDH11f1sroAf7HaMo+FBeu63YscqTnv1YdE9gusrtzCWUkKqIB8SF21d/9jsvw==",
+  "dgSpecHash": "4jZjT1062Q9/hALrQmjdgSD0IQ76nF+peL2uLIM1bGwbucbom1n1Mh60VNYGigyEQMKehpwVL8jDlAgcrBvo6g==",
   "success": true,
   "projectFilePath": "C:\\Users\\MTanzil\\Documents\\Udemy Course\\.net_core_with_react\\Reactivities\\Application\\Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\MTanzil\\.nuget\\packages\\mediatr\\8.0.0\\mediatr.8.0.0.nupkg.sha512",
+    "C:\\Users\\MTanzil\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\8.0.0\\mediatr.extensions.microsoft.dependencyinjection.8.0.0.nupkg.sha512",
     "C:\\Users\\MTanzil\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\MTanzil\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\MTanzil\\.nuget\\packages\\microsoft.data.sqlite.core\\3.1.2\\microsoft.data.sqlite.core.3.1.2.nupkg.sha512",
