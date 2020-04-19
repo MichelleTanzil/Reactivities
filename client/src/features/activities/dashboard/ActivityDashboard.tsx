@@ -16,7 +16,7 @@ const ActivityDashboard: React.FC<RouteComponentProps> = ({ location }) => {
   // activityStore is a dependency here
 
   if (activityStore.loadingInitial)
-    return <LoadingComponent content="Loading Activities..." />;
+    return <LoadingComponent content="Loading activities..." />;
   return (
     <Grid>
       <Grid.Column width={10}>
