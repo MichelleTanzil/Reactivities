@@ -1,0 +1,12 @@
+C:\Users\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Persistence\bin\Debug\netcoreapp3.0\Persistence.deps.json
+C:\Users\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Persistence\bin\Debug\netcoreapp3.0\Persistence.dll
+C:\Users\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Persistence\bin\Debug\netcoreapp3.0\Persistence.pdb
+C:\Users\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Persistence\bin\Debug\netcoreapp3.0\Domain.dll
+C:\Users\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Persistence\bin\Debug\netcoreapp3.0\Domain.pdb
+C:\Users\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Persistence\obj\Debug\netcoreapp3.0\Persistence.csprojAssemblyReference.cache
+C:\Users\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Persistence\obj\Debug\netcoreapp3.0\Persistence.csproj.CoreCompileInputs.cache
+C:\Users\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Persistence\obj\Debug\netcoreapp3.0\Persistence.AssemblyInfoInputs.cache
+C:\Users\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Persistence\obj\Debug\netcoreapp3.0\Persistence.AssemblyInfo.cs
+C:\Users\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Persistence\obj\Debug\netcoreapp3.0\Persistence.csproj.CopyComplete
+C:\Users\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Persistence\obj\Debug\netcoreapp3.0\Persistence.dll
+C:\Users\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Persistence\obj\Debug\netcoreapp3.0\Persistence.pdb

@@ -1,11 +1,11 @@
 {
   "version": 3,
   "targets": {
-    ".NETStandard,Version=v2.1": {}
+    ".NETCoreApp,Version=v3.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    ".NETStandard,Version=v2.1": []
+    ".NETCoreApp,Version=v3.0": []
   },
   "packageFolders": {
     "C:\\Users\\MTanzil\\.nuget\\packages\\": {},
@@ -27,13 +27,13 @@
         "C:\\Users\\MTanzil\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "netstandard2.1"
+        "netcoreapp3.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "netstandard2.1": {
+        "netcoreapp3.0": {
           "projectReferences": {}
         }
       },
@@ -44,7 +44,7 @@
       }
     },
     "frameworks": {
-      "netstandard2.1": {
+      "netcoreapp3.0": {
         "imports": [
           "net461",
           "net462",
@@ -55,8 +55,22 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.0.1, 3.0.1]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          }
+        ],
         "frameworkReferences": {
-          "NETStandard.Library": {
+          "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },

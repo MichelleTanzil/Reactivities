@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "eO0FUKk04KapJvt3Ad3Zi/xUmxNuwINHAIJpPrPmSMeQmCRT7bkTBJQ67zx1DkWTylvSCcaqZDEzE+Ki0L7fvg==",
+  "dgSpecHash": "6k8uYocbBLdJPnSE32h8Z95SFjOZvjoT9L4ktaMWq5tAWc8CBnr40PSbSOIQJAiSIiQ+thAPTBJdZZK3Q7e8GA==",
   "success": true,
   "projectFilePath": "C:\\Users\\MTanzil\\Documents\\Udemy Course\\.net_core_with_react\\Reactivities\\Persistence\\Persistence.csproj",
   "expectedPackageFiles": [
@@ -29,17 +29,17 @@
     "C:\\Users\\MTanzil\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.0.2\\sqlitepclraw.bundle_e_sqlite3.2.0.2.nupkg.sha512",
     "C:\\Users\\MTanzil\\.nuget\\packages\\sqlitepclraw.core\\2.0.2\\sqlitepclraw.core.2.0.2.nupkg.sha512",
     "C:\\Users\\MTanzil\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.2\\sqlitepclraw.lib.e_sqlite3.2.0.2.nupkg.sha512",
-    "C:\\Users\\MTanzil\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.0.2\\sqlitepclraw.provider.e_sqlite3.2.0.2.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
+    "C:\\Users\\MTanzil\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.0.2\\sqlitepclraw.provider.dynamic_cdecl.2.0.2.nupkg.sha512",
     "C:\\Users\\MTanzil\\.nuget\\packages\\system.collections.immutable\\1.7.0\\system.collections.immutable.1.7.0.nupkg.sha512",
     "C:\\Users\\MTanzil\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
     "C:\\Users\\MTanzil\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.0\\system.diagnostics.diagnosticsource.4.7.0.nupkg.sha512",
     "C:\\Users\\MTanzil\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\MTanzil\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.0\\system.runtime.compilerservices.unsafe.4.7.0.nupkg.sha512",
     "C:\\Users\\MTanzil\\.nuget\\packages\\system.text.encodings.web\\4.7.0\\system.text.encodings.web.4.7.0.nupkg.sha512",
     "C:\\Users\\MTanzil\\.nuget\\packages\\system.text.json\\4.7.1\\system.text.json.4.7.1.nupkg.sha512",
-    "C:\\Users\\MTanzil\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.2\\system.threading.tasks.extensions.4.5.2.nupkg.sha512"
+    "C:\\Users\\MTanzil\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\MTanzil\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\MTanzil\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512"
   ],
   "logs": []
 }
