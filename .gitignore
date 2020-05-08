@@ -1,1 +1,4 @@
-/client-app
+bin
+obj
+.DS_Store
+*.db

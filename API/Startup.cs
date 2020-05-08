@@ -16,6 +16,10 @@ using Microsoft.Extensions.Logging;
 using Persistence;
 using FluentValidation.AspNetCore;
 using API.Middleware;
+using Domain;
+using Microsoft.AspNetCore.Identity;
+using Application.Interfaces;
+using Infrastructure.Security;
 
 namespace API
 {
@@ -44,13 +48,18 @@ namespace API
               });
                 });
 
-      services.AddControllers()
+      services.AddMvc()
         .AddFluentValidation(cfg =>
         {
           cfg.RegisterValidatorsFromAssemblyContaining<Create>();
         })
         ;
+        var builder = services.AddIdentityCore<AppUser>();
+        var identityBuilder = new IdentityBuilder(builder.UserType, builder.Services);
+        identityBuilder.AddEntityFrameworkStores<DataContext>();
+        identityBuilder.AddSignInManager<SignInManager<AppUser>>();
 
+      services.AddScoped<IJwtGenerator, JwtGenerator>();
     }
 
 
@@ -70,6 +79,7 @@ namespace API
       app.UseRouting();
       app.UseAuthorization();
       app.UseCors("CorsPolicy");
+      app.UseMvc();
       app.UseEndpoints(endpoints =>
       {
         endpoints.MapControllers();
