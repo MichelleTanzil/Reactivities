@@ -2,11 +2,12 @@ using System.Threading.Tasks;
 using Application.User;
 using Domain;
 using Microsoft.AspNetCore.Mvc;
+using MediatR;
 
 namespace API.Controllers
 {
-    public class UserController : BaseController
-    {
+  public class UserController : BaseController
+  {
     [HttpPost("login")]
     public async Task<ActionResult<User>> Login(Login.Query query)
     {
