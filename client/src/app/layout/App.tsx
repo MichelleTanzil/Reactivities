@@ -5,14 +5,19 @@ import ActivityDashboard from "../../features/activities/dashboard/ActivityDashb
 import ActivityForm from "../../features/activities/form/ActivityForm";
 import ActivityDetails from "../../features/activities/details/ActivityDetails";
 import { observer } from "mobx-react-lite";
-import { Route, withRouter, RouteComponentProps } from "react-router-dom";
-import { Switch } from "react-router";
+import {
+  Route,
+  withRouter,
+  RouteComponentProps,
+  Switch,
+} from "react-router-dom";
 import HomePage from "../../features/home/HomePage";
 import NotFound from "./NotFound";
 import { ToastContainer } from "react-toastify";
 import LoginForm from "../../features/user/LoginForm";
 import { RootStoreContext } from "../stores/rootStore";
 import LoadingComponent from "./LoadingComponent";
+import ModalContainer from "../common/modals/ModalContainer";
 
 const App: React.FC<RouteComponentProps> = ({ location }) => {
   const rootStore = useContext(RootStoreContext);
@@ -31,6 +36,7 @@ const App: React.FC<RouteComponentProps> = ({ location }) => {
 
   return (
     <Fragment>
+      <ModalContainer />
       <ToastContainer position="bottom-right" />
       <Route exact path="/" component={HomePage} />
       <Route
