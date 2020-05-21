@@ -6,6 +6,7 @@ using MediatR;
 using Persistence;
 using Application.Errors;
 using System.Net;
+using Microsoft.EntityFrameworkCore;
 
 namespace Application.Activities
 {
@@ -24,7 +25,10 @@ namespace Application.Activities
       }
       public async Task<Activity> Handle(Query request, CancellationToken cancellationToken)
       {
-        var activity = await _context.Activities.FindAsync(request.Id);
+        var activity = await _context.Activities
+          .Include(x => x.UserActivities)
+          .ThenInclude(x => x.AppUser)
+          .SingleOrDefaultAsync(x => x.Id == request.Id);
 
         if (activity == null)
           throw new RestException(HttpStatusCode.NotFound, new { Activity = "Not found" });
