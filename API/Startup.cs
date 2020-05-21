@@ -7,6 +7,7 @@ using API.Controllers;
 using API.Middleware;
 using Application.Activities;
 using Application.Interfaces;
+using AutoMapper;
 using Domain;
 using FluentValidation.AspNetCore;
 using Infrastructure.Security;
@@ -38,15 +39,17 @@ namespace API
 
     public IConfiguration Configuration { get; }
 
-    // This method gets called by the runtime. Use this method to add services to the container.
+    // This method gets called by the runtime. Use this method todd add services to the container.
     public void ConfigureServices(IServiceCollection services)
     {
       services
           .AddDbContext<DataContext>(opt =>
           {
+            opt.UseLazyLoadingProxies();
             opt.UseSqlite(Configuration.GetConnectionString("DefaultConnection"));
           });
       services.AddMediatR(typeof(List.Handler).Assembly);
+      services.AddAutoMapper(typeof(List.Handler));
       services.AddCors(opt =>
         {
           opt.AddPolicy("CorsPolicy", policy =>
