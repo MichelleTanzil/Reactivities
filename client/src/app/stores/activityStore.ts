@@ -5,6 +5,7 @@ import agent from "../api/agent";
 import { history } from "../..";
 import { toast } from "react-toastify";
 import { RootStore } from "./rootStore";
+import { setActivityProps, createAttendee } from "../common/util/util";
 
 export default class ActivityStore {
   rootStore: RootStore;
@@ -56,16 +57,16 @@ export default class ActivityStore {
   // Asynchronous Method
   @action loadActivities = async () => {
     this.loadingInitial = true;
+
     try {
       const activities = await agent.Activities.list();
       runInAction("loading activities", () => {
         activities.forEach((activity) => {
-          activity.date = new Date(activity.date);
+          setActivityProps(activity, this.rootStore.userStore.user!);
           this.activityRegistry.set(activity.id, activity);
         });
         this.loadingInitial = false;
       });
-      // console.log(this.groupActivitiesByDate(activities));
     } catch (error) {
       runInAction("load activities error", () => {
         this.loadingInitial = false;
@@ -84,7 +85,7 @@ export default class ActivityStore {
       try {
         activity = await agent.Activities.details(id);
         runInAction("getting activity", () => {
-          activity.date = new Date(activity.date);
+          setActivityProps(activity, this.rootStore.userStore.user!);
           this.activity = activity;
           this.activityRegistry.set(activity.id, activity);
           this.loadingInitial = false;
@@ -162,6 +163,25 @@ export default class ActivityStore {
         this.target = "";
       });
       console.log(error);
+    }
+  };
+
+  @action attendActivity = () => {
+    const attendee = createAttendee(this.rootStore.userStore.user!);
+    if (this.activity) {
+      this.activity.attendees.push(attendee);
+      this.activity.isGoing = true;
+      this.activityRegistry.set(this.activity.id, this.activity);
+    }
+  };
+
+  @action cancelAttendance = () => {
+    if (this.activity) {
+      this.activity.attendees = this.activity.attendees.filter(
+        (a) => a.userName !== this.rootStore.userStore.user!.username
+      );
+      this.activity.isGoing = false;
+      this.activityRegistry.set(this.activity.id, this.activity);
     }
   };
 }
