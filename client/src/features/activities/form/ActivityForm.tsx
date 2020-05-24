@@ -142,7 +142,7 @@ const ActivityForm: React.FC<RouteComponentProps<DetailParams>> = ({
                   floated="right"
                   positive
                   type="submit"
-                  content="submit"
+                  content="Submit"
                 />
                 <Button
                   onClick={
@@ -153,7 +153,7 @@ const ActivityForm: React.FC<RouteComponentProps<DetailParams>> = ({
                   disabled={loading}
                   floated="right"
                   type="submit"
-                  content="cancel"
+                  content="Cancel"
                 />
               </Form>
             )}
