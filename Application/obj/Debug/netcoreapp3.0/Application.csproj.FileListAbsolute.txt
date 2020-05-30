@@ -12,3 +12,17 @@ C:\Users\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Applic
 C:\Users\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Application\obj\Debug\netcoreapp3.0\Application.csproj.CopyComplete
 C:\Users\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Application\obj\Debug\netcoreapp3.0\Application.dll
 C:\Users\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Application\obj\Debug\netcoreapp3.0\Application.pdb
+D:\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Application\bin\Debug\netcoreapp3.0\Application.deps.json
+D:\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Application\bin\Debug\netcoreapp3.0\Application.dll
+D:\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Application\bin\Debug\netcoreapp3.0\Application.pdb
+D:\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Application\bin\Debug\netcoreapp3.0\Domain.dll
+D:\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Application\bin\Debug\netcoreapp3.0\Persistence.dll
+D:\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Application\bin\Debug\netcoreapp3.0\Domain.pdb
+D:\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Application\bin\Debug\netcoreapp3.0\Persistence.pdb
+D:\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Application\obj\Debug\netcoreapp3.0\Application.csprojAssemblyReference.cache
+D:\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Application\obj\Debug\netcoreapp3.0\Application.csproj.CoreCompileInputs.cache
+D:\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Application\obj\Debug\netcoreapp3.0\Application.AssemblyInfoInputs.cache
+D:\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Application\obj\Debug\netcoreapp3.0\Application.AssemblyInfo.cs
+D:\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Application\obj\Debug\netcoreapp3.0\Application.csproj.CopyComplete
+D:\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Application\obj\Debug\netcoreapp3.0\Application.dll
+D:\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Application\obj\Debug\netcoreapp3.0\Application.pdb

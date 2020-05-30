@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Segment, Item, Header, Button, Image } from "semantic-ui-react";
-import { IActivity } from "../../../app/models/activity";
+import { IActivity, IAttendee } from "../../../app/models/activity";
 import { observer } from "mobx-react-lite";
 import { Link } from "react-router-dom";
 import { format } from "date-fns";
@@ -24,6 +24,7 @@ const ActivityDetailedHeader: React.FC<{ activity: IActivity }> = ({
 }) => {
   const rootStore = useContext(RootStoreContext);
   const { attendActivity, cancelAttendance, loading } = rootStore.activityStore;
+  const host: IAttendee = activity.attendees.filter((x) => x.isHost)[0];
 
   return (
     <Segment.Group>
@@ -44,7 +45,10 @@ const ActivityDetailedHeader: React.FC<{ activity: IActivity }> = ({
                 />
                 <p>{format(activity.date, "eeee do MMMM")}</p>
                 <p>
-                  Hosted by <strong>Michelle</strong>
+                  Hosted by{" "}
+                  <Link to={`/profile/${host.userName}`}>
+                    <strong>{host.userName}</strong>
+                  </Link>
                 </p>
               </Item.Content>
             </Item>

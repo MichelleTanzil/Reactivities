@@ -6234,11 +6234,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MTanzil\\Documents\\Udemy Course\\.net_core_with_react\\Reactivities\\Persistence\\Persistence.csproj",
+      "projectUniqueName": "D:\\MTanzil\\Documents\\Udemy Course\\.net_core_with_react\\Reactivities\\Persistence\\Persistence.csproj",
       "projectName": "Persistence",
-      "projectPath": "C:\\Users\\MTanzil\\Documents\\Udemy Course\\.net_core_with_react\\Reactivities\\Persistence\\Persistence.csproj",
+      "projectPath": "D:\\MTanzil\\Documents\\Udemy Course\\.net_core_with_react\\Reactivities\\Persistence\\Persistence.csproj",
       "packagesPath": "C:\\Users\\MTanzil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MTanzil\\Documents\\Udemy Course\\.net_core_with_react\\Reactivities\\Persistence\\obj\\",
+      "outputPath": "D:\\MTanzil\\Documents\\Udemy Course\\.net_core_with_react\\Reactivities\\Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6255,8 +6255,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\MTanzil\\Documents\\Udemy Course\\.net_core_with_react\\Reactivities\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\MTanzil\\Documents\\Udemy Course\\.net_core_with_react\\Reactivities\\Domain\\Domain.csproj"
+            "D:\\MTanzil\\Documents\\Udemy Course\\.net_core_with_react\\Reactivities\\Domain\\Domain.csproj": {
+              "projectPath": "D:\\MTanzil\\Documents\\Udemy Course\\.net_core_with_react\\Reactivities\\Domain\\Domain.csproj"
             }
           }
         }

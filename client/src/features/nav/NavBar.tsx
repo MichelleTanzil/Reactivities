@@ -4,11 +4,6 @@ import { observer } from "mobx-react-lite";
 import { NavLink, Link } from "react-router-dom";
 import { RootStoreContext } from "../../app/stores/rootStore";
 
-// interface IProps {
-//   openCreateForm: () => void;
-// }
-
-// const NavBar: React.FC<IProps> = ({openCreateForm}) => {
 const NavBar: React.FC = () => {
   const rootStore = useContext(RootStoreContext);
   const { user, logout } = rootStore.userStore;
@@ -44,7 +39,7 @@ const NavBar: React.FC = () => {
               <Dropdown.Menu>
                 <Dropdown.Item
                   as={Link}
-                  to={`/profile/username`}
+                  to={`/profile/${user.username}`}
                   text="My profile"
                   icon="user"
                 />
