@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MTanzil\\Documents\\Udemy Course\\.net_core_with_react\\Reactivities\\Persistence\\Persistence.csproj": {}
+    "E:\\Documents\\Code\\Udemy Course\\Reactivities\\Persistence\\Persistence.csproj": {}
   },
   "projects": {
-    "D:\\MTanzil\\Documents\\Udemy Course\\.net_core_with_react\\Reactivities\\Domain\\Domain.csproj": {
+    "E:\\Documents\\Code\\Udemy Course\\Reactivities\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MTanzil\\Documents\\Udemy Course\\.net_core_with_react\\Reactivities\\Domain\\Domain.csproj",
+        "projectUniqueName": "E:\\Documents\\Code\\Udemy Course\\Reactivities\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\MTanzil\\Documents\\Udemy Course\\.net_core_with_react\\Reactivities\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\MTanzil\\.nuget\\packages\\",
-        "outputPath": "D:\\MTanzil\\Documents\\Udemy Course\\.net_core_with_react\\Reactivities\\Domain\\obj\\",
+        "projectPath": "E:\\Documents\\Code\\Udemy Course\\Reactivities\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Michelle\\.nuget\\packages\\",
+        "outputPath": "E:\\Documents\\Code\\Udemy Course\\Reactivities\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\MTanzil\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Michelle\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
@@ -73,24 +73,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\MTanzil\\Documents\\Udemy Course\\.net_core_with_react\\Reactivities\\Persistence\\Persistence.csproj": {
+    "E:\\Documents\\Code\\Udemy Course\\Reactivities\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MTanzil\\Documents\\Udemy Course\\.net_core_with_react\\Reactivities\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "E:\\Documents\\Code\\Udemy Course\\Reactivities\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "D:\\MTanzil\\Documents\\Udemy Course\\.net_core_with_react\\Reactivities\\Persistence\\Persistence.csproj",
-        "packagesPath": "C:\\Users\\MTanzil\\.nuget\\packages\\",
-        "outputPath": "D:\\MTanzil\\Documents\\Udemy Course\\.net_core_with_react\\Reactivities\\Persistence\\obj\\",
+        "projectPath": "E:\\Documents\\Code\\Udemy Course\\Reactivities\\Persistence\\Persistence.csproj",
+        "packagesPath": "C:\\Users\\Michelle\\.nuget\\packages\\",
+        "outputPath": "E:\\Documents\\Code\\Udemy Course\\Reactivities\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\MTanzil\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Michelle\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
@@ -101,8 +101,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "D:\\MTanzil\\Documents\\Udemy Course\\.net_core_with_react\\Reactivities\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\MTanzil\\Documents\\Udemy Course\\.net_core_with_react\\Reactivities\\Domain\\Domain.csproj"
+              "E:\\Documents\\Code\\Udemy Course\\Reactivities\\Domain\\Domain.csproj": {
+                "projectPath": "E:\\Documents\\Code\\Udemy Course\\Reactivities\\Domain\\Domain.csproj"
               }
             }
           }
@@ -158,7 +158,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

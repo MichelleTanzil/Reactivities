@@ -22,3 +22,15 @@ D:\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Persistence\
 D:\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Persistence\obj\Debug\netcoreapp3.0\Persistence.csproj.CopyComplete
 D:\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Persistence\obj\Debug\netcoreapp3.0\Persistence.dll
 D:\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Persistence\obj\Debug\netcoreapp3.0\Persistence.pdb
+E:\Documents\Code\Udemy Course\Reactivities\Persistence\bin\Debug\netcoreapp3.0\Persistence.deps.json
+E:\Documents\Code\Udemy Course\Reactivities\Persistence\bin\Debug\netcoreapp3.0\Persistence.dll
+E:\Documents\Code\Udemy Course\Reactivities\Persistence\bin\Debug\netcoreapp3.0\Persistence.pdb
+E:\Documents\Code\Udemy Course\Reactivities\Persistence\bin\Debug\netcoreapp3.0\Domain.dll
+E:\Documents\Code\Udemy Course\Reactivities\Persistence\bin\Debug\netcoreapp3.0\Domain.pdb
+E:\Documents\Code\Udemy Course\Reactivities\Persistence\obj\Debug\netcoreapp3.0\Persistence.csprojAssemblyReference.cache
+E:\Documents\Code\Udemy Course\Reactivities\Persistence\obj\Debug\netcoreapp3.0\Persistence.AssemblyInfoInputs.cache
+E:\Documents\Code\Udemy Course\Reactivities\Persistence\obj\Debug\netcoreapp3.0\Persistence.AssemblyInfo.cs
+E:\Documents\Code\Udemy Course\Reactivities\Persistence\obj\Debug\netcoreapp3.0\Persistence.csproj.CoreCompileInputs.cache
+E:\Documents\Code\Udemy Course\Reactivities\Persistence\obj\Debug\netcoreapp3.0\Persistence.csproj.CopyComplete
+E:\Documents\Code\Udemy Course\Reactivities\Persistence\obj\Debug\netcoreapp3.0\Persistence.dll
+E:\Documents\Code\Udemy Course\Reactivities\Persistence\obj\Debug\netcoreapp3.0\Persistence.pdb

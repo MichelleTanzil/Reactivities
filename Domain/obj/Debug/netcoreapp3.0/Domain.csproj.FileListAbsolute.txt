@@ -16,3 +16,12 @@ D:\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Domain\obj\D
 D:\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Domain\obj\Debug\netcoreapp3.0\Domain.AssemblyInfo.cs
 D:\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Domain\obj\Debug\netcoreapp3.0\Domain.dll
 D:\MTanzil\Documents\Udemy Course\.net_core_with_react\Reactivities\Domain\obj\Debug\netcoreapp3.0\Domain.pdb
+E:\Documents\Code\Udemy Course\Reactivities\Domain\bin\Debug\netcoreapp3.0\Domain.deps.json
+E:\Documents\Code\Udemy Course\Reactivities\Domain\bin\Debug\netcoreapp3.0\Domain.dll
+E:\Documents\Code\Udemy Course\Reactivities\Domain\bin\Debug\netcoreapp3.0\Domain.pdb
+E:\Documents\Code\Udemy Course\Reactivities\Domain\obj\Debug\netcoreapp3.0\Domain.csprojAssemblyReference.cache
+E:\Documents\Code\Udemy Course\Reactivities\Domain\obj\Debug\netcoreapp3.0\Domain.AssemblyInfoInputs.cache
+E:\Documents\Code\Udemy Course\Reactivities\Domain\obj\Debug\netcoreapp3.0\Domain.AssemblyInfo.cs
+E:\Documents\Code\Udemy Course\Reactivities\Domain\obj\Debug\netcoreapp3.0\Domain.csproj.CoreCompileInputs.cache
+E:\Documents\Code\Udemy Course\Reactivities\Domain\obj\Debug\netcoreapp3.0\Domain.dll
+E:\Documents\Code\Udemy Course\Reactivities\Domain\obj\Debug\netcoreapp3.0\Domain.pdb
