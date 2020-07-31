@@ -1,5 +1,5 @@
-import React, { useEffect, useContext } from "react";
-import { Grid } from "semantic-ui-react";
+import React, { useEffect, useContext, useState } from "react";
+import { Grid, Button } from "semantic-ui-react";
 import ActivityList from "./ActivityList";
 import { observer } from "mobx-react-lite";
 import LoadingComponent from "../../../app/layout/LoadingComponent";
@@ -8,7 +8,20 @@ import { RootStoreContext } from "../../../app/stores/rootStore";
 
 const ActivityDashboard: React.FC<RouteComponentProps> = ({ location }) => {
   const rootStore = useContext(RootStoreContext);
-  const { loadActivities, loadingInitial } = rootStore.activityStore;
+  const {
+    loadActivities,
+    loadingInitial,
+    setPage,
+    page,
+    totalPages,
+  } = rootStore.activityStore;
+  const [loadingNext, setLoadingNext] = useState(false);
+
+  const handleGetNext = () => {
+    setLoadingNext(true);
+    setPage(page + 1);
+    loadActivities().then(() => setLoadingNext(false));
+  };
 
   useEffect(() => {
     loadActivities();
@@ -16,12 +29,21 @@ const ActivityDashboard: React.FC<RouteComponentProps> = ({ location }) => {
   // Empty array makes sure useEffect only runs once
   // activityStore is a dependency here
 
-  if (loadingInitial)
+  if (loadingInitial && page === 0)
     return <LoadingComponent content="Loading activities..." />;
+
   return (
     <Grid>
       <Grid.Column width={10}>
         <ActivityList />
+        <Button
+          floated="right"
+          content="More..."
+          positive
+          disabled={totalPages === page + 1}
+          onClick={handleGetNext}
+          loading={loadingNext}
+        />
       </Grid.Column>
       <Grid.Column width={6}>
         <h2>Activity filters</h2>
