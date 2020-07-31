@@ -1,11 +1,12 @@
 import React, { useEffect, useContext, useState } from "react";
-import { Grid, Button, Loader } from "semantic-ui-react";
+import { Grid, Loader } from "semantic-ui-react";
 import ActivityList from "./ActivityList";
 import { observer } from "mobx-react-lite";
 import LoadingComponent from "../../../app/layout/LoadingComponent";
 import { RouteComponentProps } from "react-router-dom";
 import { RootStoreContext } from "../../../app/stores/rootStore";
 import InfiniteScroll from "react-infinite-scroller";
+import ActivityFilters from "./ActivityFilters";
 
 const ActivityDashboard: React.FC<RouteComponentProps> = ({ location }) => {
   const rootStore = useContext(RootStoreContext);
@@ -46,7 +47,7 @@ const ActivityDashboard: React.FC<RouteComponentProps> = ({ location }) => {
         </InfiniteScroll>
       </Grid.Column>
       <Grid.Column width={6}>
-        <h2>Activity filters</h2>
+        <ActivityFilters />
       </Grid.Column>
       <Grid.Column width={10}>
         <Loader active={loadingNext} />
