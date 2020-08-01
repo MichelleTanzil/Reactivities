@@ -34,19 +34,19 @@ export default class ActivityStore {
   @observable page = 0;
   @observable predicate = new Map();
 
-  @action setPredicate(predicate: string, value: string | Date) {
+  @action setPredicate = (predicate: string, value: string | Date) => {
     this.predicate.clear();
     if (predicate !== "all") {
       this.predicate.set(predicate, value);
     }
-  }
+  };
 
   @computed get axiosParams() {
     const params = new URLSearchParams();
     params.append("limit", String(LIMIT));
     params.append("offset", `${this.page ? this.page * LIMIT : 0}`);
     this.predicate.forEach((value, key) => {
-      if (key == "startDate") {
+      if (key === "startDate") {
         params.append(key, value.toISOString());
       } else {
         params.append(key, value);
@@ -63,8 +63,7 @@ export default class ActivityStore {
     this.page = page;
   };
 
-  @computed
-  get activitiesByDate() {
+  @computed get activitiesByDate() {
     return this.groupActivitiesByDate(
       Array.from(this.activityRegistry.values())
     );
