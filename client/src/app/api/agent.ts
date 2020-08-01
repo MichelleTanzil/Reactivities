@@ -98,6 +98,8 @@ const Profiles = {
   update: (profile: Partial<IProfile>) => {
     requests.put(`/profiles/`, profile);
   },
+  listActivities: (username: string, predicate: string) =>
+    requests.get(`/profiles/${username}/activities?predicate=${predicate}`),
 };
 
 export default {
