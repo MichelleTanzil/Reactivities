@@ -7,6 +7,7 @@ import { RouteComponentProps } from "react-router-dom";
 import { RootStoreContext } from "../../../app/stores/rootStore";
 import InfiniteScroll from "react-infinite-scroller";
 import ActivityFilters from "./ActivityFilters";
+import ActivitySearchBar from "./ActivitySearchBar";
 
 const ActivityDashboard: React.FC<RouteComponentProps> = ({ location }) => {
   const rootStore = useContext(RootStoreContext);
@@ -47,6 +48,7 @@ const ActivityDashboard: React.FC<RouteComponentProps> = ({ location }) => {
         </InfiniteScroll>
       </Grid.Column>
       <Grid.Column width={6}>
+        <ActivitySearchBar />
         <ActivityFilters />
       </Grid.Column>
       <Grid.Column width={10}>

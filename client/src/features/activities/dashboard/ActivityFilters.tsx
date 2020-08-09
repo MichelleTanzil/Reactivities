@@ -9,7 +9,7 @@ const ActivityFilters = () => {
   const { predicate, setPredicate } = rootStore.activityStore;
   return (
     <Fragment>
-      <Menu vertical size={"large"} style={{ width: "100%", marginTop: 50 }}>
+      <Menu vertical size={"large"} style={{ width: "100%", marginTop: 25 }}>
         <Header icon={"filter"} attached color={"teal"} content={"Filters"} />
         <Menu.Item
           active={predicate.size === 0}

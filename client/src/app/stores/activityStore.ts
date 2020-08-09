@@ -33,6 +33,7 @@ export default class ActivityStore {
   @observable activityCount = 0;
   @observable page = 0;
   @observable predicate = new Map();
+  @observable searchLoading = false;
 
   @action setPredicate = (predicate: string, value: string | Date) => {
     this.predicate.clear();
@@ -101,7 +102,6 @@ export default class ActivityStore {
   // Asynchronous Method
   @action loadActivities = async () => {
     this.loadingInitial = true;
-
     try {
       const activitiesEnvelope = await agent.Activities.list(this.axiosParams);
       const { activities, activityCount } = activitiesEnvelope;
@@ -116,6 +116,27 @@ export default class ActivityStore {
     } catch (error) {
       runInAction("load activities error", () => {
         this.loadingInitial = false;
+      });
+      console.log(error);
+    }
+  };
+
+  @action searchActivities = async () => {
+    this.searchLoading = true;
+    try {
+      const activitiesEnvelope = await agent.Activities.list(this.axiosParams);
+      const { activities, activityCount } = activitiesEnvelope;
+      runInAction("searching activities", () => {
+        activities.forEach((activity) => {
+          setActivityProps(activity, this.rootStore.userStore.user!);
+          this.activityRegistry.set(activity.id, activity);
+        });
+        this.activityCount = activityCount;
+        this.searchLoading = false;
+      });
+    } catch (error) {
+      runInAction("search activities error", () => {
+        this.searchLoading = false;
       });
       console.log(error);
     }
