@@ -56,5 +56,11 @@ namespace API.Controllers
     {
       return await Mediator.Send(new Unattend.Command { Id = id });
     }
+
+    [HttpGet("search")]
+    public async Task<ActionResult<Search.ActivitiesEnvelope>> Search(string searchTerm, int? limit, int? offset)
+    {
+      return await Mediator.Send(new Search.Query(searchTerm, limit, offset));
+    }
   }
 }
