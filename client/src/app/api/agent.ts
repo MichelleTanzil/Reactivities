@@ -78,6 +78,11 @@ const Activities = {
   delete: (id: string) => requests.del(`/activities/${id}`),
   attend: (id: string) => requests.post(`/activities/${id}/attend`, {}),
   unattend: (id: string) => requests.del(`/activities/${id}/attend`),
+  search: (params: URLSearchParams): Promise<IActivitiesEnvelope> =>
+    axios
+      .get(`/activities/search`, { params: params })
+      .then(sleep(500))
+      .then(responseBody),
 };
 
 const User = {

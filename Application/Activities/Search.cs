@@ -48,9 +48,11 @@ namespace Application.Activities
         if (request.SearchTerm.Length > 0)
         {
           queryable = queryable.
-          Where(x => x.Title
-            .ToLower()
-            .Contains(request.SearchTerm.ToLower())
+          Where(x =>
+          x.Title
+            .ToLower().Contains(request.SearchTerm.ToLower()) ||
+          x.Category
+            .ToLower().Contains(request.SearchTerm.ToLower())
           );
         }
 
